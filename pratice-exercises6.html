@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boolean and if statements</title>
+</head>
+<body>
+
+
+
+  <script>
+// const hour = 9;
+// if(hour >= 6 && hour <=12){
+//   console.log('Good morning')
+// }else if(hour >=13 && hour <=17){
+//   console.log('good afternoon');
+// }else{
+//   console.log('good night');
+// }
+
+// const hour = 15;
+// if(hour >= 6 && hour <=12){
+//   console.log('Good morning')
+// }else if(hour >=13 && hour <=17){
+//   console.log('good afternoon');
+// }else{
+//   console.log('good night');
+// }
+
+// const hour = 15;
+// const name='kiran'; 
+
+// if(hour >= 6 && hour <=12){
+//   console.log(`good morning: ${name}`);
+// }else if(hour >=13 && hour <=17){
+//   console.log(`good afternoon: ${name}`);
+// }else{
+//   console.log('good evening:${name}');
+// }
+
+// const age = 5;
+
+// if (age <= 6 || age >= 65) {
+//   console.log('Discount');
+// } else {
+//   console.log('No discount');
+// }
+
+//explanation
+
+// The code you provided checks the value of the age variable and determines whether or not a discount should be given based on the age. Here's an explanation of the code:
+
+// const age = 5;: This line defines a constant variable age and assigns it the value 5. The variable age represents the age of a person.
+
+// The if statement is used to create a conditional branch in the code. It checks a condition and executes one block of code if the condition is true and another block if it's false.
+
+// if (age <= 6 || age >= 65): In this part, the condition is checked. It uses the logical OR operator || to combine two conditions:
+
+// age <= 6: This condition checks if the age is less than or equal to 6.
+// age >= 65: This condition checks if the age is greater than or equal to 65.
+// The || operator means that if either of these conditions is true, the entire condition is true. So, the code inside the if block will be executed if the age is less than or equal to 6 or greater than or equal to 65.
+
+// console.log('Discount');: If the condition in the if statement is true (meaning the age is either less than or equal to 6 or greater than or equal to 65), this line of code is executed, and it will print "Discount" to the console.
+
+// else: If the condition in the if statement is false (meaning the age is between 7 and 64), the code inside the else block will be executed.
+
+// console.log('No discount');: In the else block, this line of code is executed, and it will print "No discount" to the console.
+
+// So, the code checks if a person's age is either less than or equal to 6 (a child) or greater than or equal to 65 (a senior citizen). If the age falls into either of these categories, it prints "Discount" to the console; otherwise, it prints "No discount."
+
+
+// const age =5;
+// const isHoliday =true;
+
+// if((age <= 6 || age >= 65) && !isHoliday) {
+// console.log('discount');
+// }else{
+//   console.log('no discount');
+// }
+
+
+// const randomNumber = Math.random();
+
+// let result;
+// if(randomNumber < 0.5){
+//  result="head";
+
+// }else{
+//   result='trial';
+// }
+
+// const guess='head';
+// if(guess === result ){
+// console.log('you win');
+// }else{
+//   console.log('you lose');
+// }
+
+//shotcut
+
+const randomNumber = Math.random();
+
+const result= randomNumber <0.5 ? 'trial' : 'head';
+
+const guess='head';
+
+console.log(guess=== result ? 'you win' : 'you lose');
+
+
+  </script>
+</body>
+</html>

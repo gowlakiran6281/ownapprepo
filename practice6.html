@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <input type="text" id="display" disabled />
+    <br />
+    <button onclick="cal('1')">1</button>
+    <button onclick="cal('2')">2</button>
+    <button onclick="cal('3')">3</button>
+    <button onclick="cal('+')">+</button>
+    <br />
+    <button onclick="cal('4')">4</button>
+    <button onclick="cal('5')">5</button>
+    <button onclick="cal('6')">6</button>
+    <button onclick="cal('-')">-</button>
+    <br />
+    <button onclick="cal('7')">7</button>
+    <button onclick="cal('8')">8</button>
+    <button onclick="cal('9')">9</button>
+    <button onclick="cal('*')">*</button>
+    <br />
+    <button onclick="cal('0')">0</button>
+    <button onclick="cal('.')">.</button>
+    <button onclick="equals()">=</button>
+    <button onclick="cal('/')">/</button>
+    <br />
+    <button onclick="flush()">clear</button>
+    <script>
+      var input = document.getElementById("display");
+      function cal(value) {
+        input.value += value;
+      }
+      function flush() {
+        input.value = "";
+      }
+
+      function equals() {
+        try {
+          document.getElementById("display").value = eval(
+            document.getElementById("display").value
+          );
+        } catch (error) {
+          document.getElementById("display").value='error';
+        }
+      }
+    </script>
+  </body>
+</html>

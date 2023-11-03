@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SPA for User Data</title>
+    <link rel="stylesheet" href="api_1.js">
+    <link rel="stylesheet" href="api_2.js">
+</head>
+<body>
+    <h1>Users</h1>
+    <ul id="user-list"></ul>
+
+    <h2>Add a New User</h2>
+    <form id="add-user-form">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <button type="submit">Add User</button>
+    </form>
+
+    <h2>Edit User</h2>
+    <form id="edit-user-form">
+        <input type="number" id="edit-id" placeholder="User ID" required>
+        <input type="text" id="edit-name" placeholder="New Name">
+        <input type="email" id="edit-email" placeholder="New Email">
+        <button type="submit">Edit User</button>
+    </form>
+
+    <h2>Delete User</h2>
+    <form id="delete-user-form">
+        <input type="number" id="delete-id" placeholder="User ID to Delete" required>
+        <button type="submit">Delete User</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
